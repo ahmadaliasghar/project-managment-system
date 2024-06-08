@@ -21,8 +21,8 @@ const Footer = () => {
             <div className='w-full flex px-4 '>
                 <div className='w-[33%] border-1 flex flex-col gap-3'>
                     <img src="/asset/logo.png" width="200px" alt="Logo" />
-                    {catgories.map((item) => (
-                        <h1 className='text-xl pl-2 mt-2'>{item.name}</h1>
+                    {catgories.map((item, index) => (
+                        <h1 className='text-xl pl-2 mt-2' key={index}>{item.name}</h1>
                     ))}
                 </div>
                 <div className='w-[33%] border-x border-gray-400 flex flex-col justify-center items-center gap-4'>
